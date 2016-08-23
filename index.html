@@ -13,6 +13,27 @@
 
      <!-- All CSS goes here -->
      <style amp-custom>
+     body {
+       background-color: #ccc;
+     }
+      h1, h2 {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      amp-anim {
+        position: relative;
+        z-index: 0;
+      }
+      .wrapper {
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+      }
      </style>
 
      <!-- This must always be last -->
@@ -20,9 +41,13 @@
   </head>
   <body>
     <!-- How do I preserve original aspect ratio of the image??? -->
+    <div class="wrapper">
+      <h1>Ksenia Coulter</h1>
+      <h2>Full-Stack Web Developer</h2>
+    </div>
     <amp-anim
-      width=600
-      height=350
+      width=1500
+      height=889
       layout=responsive
       src="resources/img/ksenia_banner.gif"
       alt="Ksenia portrait"
