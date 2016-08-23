@@ -2,8 +2,12 @@
 <html amp>
   <head>
     <meta charset="utf-8">
+    <title>Ksenia Coulter</title>
     <!-- TODO change the link to the actual link -->
     <link rel="canonical" href="https://ampbyexample.com/Introduction/Hello_World">
+
+    <!-- This must be included for animated gifs -->
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -15,6 +19,13 @@
      <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-    
+    <!-- How do I preserve original aspect ratio of the image??? -->
+    <amp-anim
+      width=600
+      height=350
+      layout=responsive
+      src="resources/img/ksenia_banner.gif"
+      alt="Ksenia portrait"
+    </amp-anim>
   </body>
 </html>
